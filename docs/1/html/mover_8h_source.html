@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа 1: Исходный файл src/1/mover.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Лабораторная работа 1
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Основы тестирования</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_04b22bf405d332822b35804fb92e96db.html">1</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">mover.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MOVER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MOVER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;coordinates.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classmover.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmover.html">mover</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classmover.html#ac965e6bbf843afee20c7a3942cb4ace5">mover</a>(uint64_t coordinatesOfMover, uint64_t sizeOfStreet);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classmover.html#a42ae184d78dbe7c7995a3433a888f7fd">~mover</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> <a class="code" href="classcoordinates.html">coordinates</a> &amp;<a class="code" href="classmover.html#a00d7c914058d3342352e2de70998a65c">currentPosition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmover.html#a6e3a2e8d3cf4659d56edcff8f1b6d04d">moveUp</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmover.html#afb444c6ff8d82415f64aa68938b99872">moveDown</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmover.html#a0bc3a4bf58d615f94129aeb5fd06b0c1">moveLeft</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmover.html#a05154ee6f3f5f00e0597cfb6bcc5a823">moveRight</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmover.html#a376f0d3b3ba29047e079a8554917dd39">moveUpAndRight</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmover.html#a16351929e367f47e0e151f3f8131acca">moveUpAndLeft</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmover.html#ab60ca33caabcba6fad71ae1cb163d536">moveDownAndRight</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmover.html#a9a3de28e5c6ed8956e6e0806fe170f35">moveDownAndLeft</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmover.html#a134dab6650fc7484f3974626ea648fad">switchSideAndGoRight</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmover.html#a7a5e52162b33b26c8084104362999e0f">switchSideAndGoLeft</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmover.html#aa46d4830b312ec4e8163ec8dd1ac86c6">switchSide</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    uint64_t <a class="code" href="classmover.html#ab201f4635ccf906067abbd32d2995067">moveTo</a>(uint64_t point);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    uint64_t <a class="code" href="classmover.html#ab201f4635ccf906067abbd32d2995067">moveTo</a>(<span class="keyword">const</span> <a class="code" href="classcoordinates.html">coordinates</a> &amp;point);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    uint64_t <a class="code" href="classmover.html#abaeae636b0c93b383a6120aaccfe8d51">goHome</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> isMoveAvailable(<a class="code" href="classcoordinates.html">coordinates</a> <a class="code" href="classmover.html#ab201f4635ccf906067abbd32d2995067">moveTo</a>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classcoordinates.html">coordinates</a> m_sizeOfStreet;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classcoordinates.html">coordinates</a> m_currentPosition;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classcoordinates.html">coordinates</a> m_startingPosition;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MOVER_H</span></div>
+<div class="ttc" id="aclasscoordinates_html"><div class="ttname"><a href="classcoordinates.html">coordinates</a></div><div class="ttdoc">Класс, позволяющий работать с координатами</div><div class="ttdef"><b>Definition:</b> coordinates.h:21</div></div>
+<div class="ttc" id="aclassmover_html"><div class="ttname"><a href="classmover.html">mover</a></div><div class="ttdoc">Класс, создающий поле и перемещающегося по нему юнита</div><div class="ttdef"><b>Definition:</b> mover.h:14</div></div>
+<div class="ttc" id="aclassmover_html_a00d7c914058d3342352e2de70998a65c"><div class="ttname"><a href="classmover.html#a00d7c914058d3342352e2de70998a65c">mover::currentPosition</a></div><div class="ttdeci">const coordinates &amp; currentPosition() const</div><div class="ttdoc">Получить текущую позицию</div><div class="ttdef"><b>Definition:</b> mover.cpp:22</div></div>
+<div class="ttc" id="aclassmover_html_a05154ee6f3f5f00e0597cfb6bcc5a823"><div class="ttname"><a href="classmover.html#a05154ee6f3f5f00e0597cfb6bcc5a823">mover::moveRight</a></div><div class="ttdeci">bool moveRight()</div><div class="ttdoc">Сдвинуться</div><div class="ttdef"><b>Definition:</b> mover.cpp:68</div></div>
+<div class="ttc" id="aclassmover_html_a0bc3a4bf58d615f94129aeb5fd06b0c1"><div class="ttname"><a href="classmover.html#a0bc3a4bf58d615f94129aeb5fd06b0c1">mover::moveLeft</a></div><div class="ttdeci">bool moveLeft()</div><div class="ttdoc">Сдвинуться влево</div><div class="ttdef"><b>Definition:</b> mover.cpp:55</div></div>
+<div class="ttc" id="aclassmover_html_a134dab6650fc7484f3974626ea648fad"><div class="ttname"><a href="classmover.html#a134dab6650fc7484f3974626ea648fad">mover::switchSideAndGoRight</a></div><div class="ttdeci">bool switchSideAndGoRight()</div><div class="ttdoc">Перейти на другую сторону и сдвинуться на 1 вправо</div><div class="ttdef"><b>Definition:</b> mover.cpp:142</div></div>
+<div class="ttc" id="aclassmover_html_a16351929e367f47e0e151f3f8131acca"><div class="ttname"><a href="classmover.html#a16351929e367f47e0e151f3f8131acca">mover::moveUpAndLeft</a></div><div class="ttdeci">bool moveUpAndLeft()</div><div class="ttdoc">Сдвинуться вверх и влево</div><div class="ttdef"><b>Definition:</b> mover.cpp:93</div></div>
+<div class="ttc" id="aclassmover_html_a376f0d3b3ba29047e079a8554917dd39"><div class="ttname"><a href="classmover.html#a376f0d3b3ba29047e079a8554917dd39">mover::moveUpAndRight</a></div><div class="ttdeci">bool moveUpAndRight()</div><div class="ttdoc">Сдвинуться вверх и вправо</div><div class="ttdef"><b>Definition:</b> mover.cpp:78</div></div>
+<div class="ttc" id="aclassmover_html_a42ae184d78dbe7c7995a3433a888f7fd"><div class="ttname"><a href="classmover.html#a42ae184d78dbe7c7995a3433a888f7fd">mover::~mover</a></div><div class="ttdeci">~mover()</div><div class="ttdoc">Пустой деструктор</div><div class="ttdef"><b>Definition:</b> mover.cpp:11</div></div>
+<div class="ttc" id="aclassmover_html_a6e3a2e8d3cf4659d56edcff8f1b6d04d"><div class="ttname"><a href="classmover.html#a6e3a2e8d3cf4659d56edcff8f1b6d04d">mover::moveUp</a></div><div class="ttdeci">bool moveUp()</div><div class="ttdoc">Сдвинуться вверх</div><div class="ttdef"><b>Definition:</b> mover.cpp:27</div></div>
+<div class="ttc" id="aclassmover_html_a7a5e52162b33b26c8084104362999e0f"><div class="ttname"><a href="classmover.html#a7a5e52162b33b26c8084104362999e0f">mover::switchSideAndGoLeft</a></div><div class="ttdeci">bool switchSideAndGoLeft()</div><div class="ttdoc">Перейти на другую сторону и сдвинуться на 1 влево</div><div class="ttdef"><b>Definition:</b> mover.cpp:153</div></div>
+<div class="ttc" id="aclassmover_html_a9a3de28e5c6ed8956e6e0806fe170f35"><div class="ttname"><a href="classmover.html#a9a3de28e5c6ed8956e6e0806fe170f35">mover::moveDownAndLeft</a></div><div class="ttdeci">bool moveDownAndLeft()</div><div class="ttdoc">Сдвинуться вниз и влево</div><div class="ttdef"><b>Definition:</b> mover.cpp:125</div></div>
+<div class="ttc" id="aclassmover_html_aa46d4830b312ec4e8163ec8dd1ac86c6"><div class="ttname"><a href="classmover.html#aa46d4830b312ec4e8163ec8dd1ac86c6">mover::switchSide</a></div><div class="ttdeci">bool switchSide()</div><div class="ttdoc">Перейти на другую сторону</div><div class="ttdef"><b>Definition:</b> mover.cpp:164</div></div>
+<div class="ttc" id="aclassmover_html_ab201f4635ccf906067abbd32d2995067"><div class="ttname"><a href="classmover.html#ab201f4635ccf906067abbd32d2995067">mover::moveTo</a></div><div class="ttdeci">uint64_t moveTo(uint64_t point)</div><div class="ttdoc">Дойти до ячейки с номером point.</div><div class="ttdef"><b>Definition:</b> mover.cpp:174</div></div>
+<div class="ttc" id="aclassmover_html_ab60ca33caabcba6fad71ae1cb163d536"><div class="ttname"><a href="classmover.html#ab60ca33caabcba6fad71ae1cb163d536">mover::moveDownAndRight</a></div><div class="ttdeci">bool moveDownAndRight()</div><div class="ttdoc">Сдвинуться вниз и вправо</div><div class="ttdef"><b>Definition:</b> mover.cpp:110</div></div>
+<div class="ttc" id="aclassmover_html_abaeae636b0c93b383a6120aaccfe8d51"><div class="ttname"><a href="classmover.html#abaeae636b0c93b383a6120aaccfe8d51">mover::goHome</a></div><div class="ttdeci">uint64_t goHome()</div><div class="ttdoc">Дойти до ячейки с номером point.</div><div class="ttdef"><b>Definition:</b> mover.cpp:222</div></div>
+<div class="ttc" id="aclassmover_html_ac965e6bbf843afee20c7a3942cb4ace5"><div class="ttname"><a href="classmover.html#ac965e6bbf843afee20c7a3942cb4ace5">mover::mover</a></div><div class="ttdeci">mover(uint64_t coordinatesOfMover, uint64_t sizeOfStreet)</div><div class="ttdef"><b>Definition:</b> mover.cpp:3</div></div>
+<div class="ttc" id="aclassmover_html_afb444c6ff8d82415f64aa68938b99872"><div class="ttname"><a href="classmover.html#afb444c6ff8d82415f64aa68938b99872">mover::moveDown</a></div><div class="ttdeci">bool moveDown()</div><div class="ttdoc">Сдвинуться вниз</div><div class="ttdef"><b>Definition:</b> mover.cpp:41</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
