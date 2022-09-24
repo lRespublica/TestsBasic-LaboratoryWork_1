@@ -1,0 +1,15 @@
+Input=Nirvana - Heart-Shaped Box
+Output=Nirana - Hert-Shabped Bx
+
+Input=345 3456 Hello ?132@qQ24qwrqw4? - - - - - - - - -adsadaA
+Output=35 34556 Helo ?12@qQ24qrwrqw4? - - - -- - - - -adsdaA
+
+Input=The quick brown fox jumps over the lazy dog
+Output=Te quck brwn fx jups ovwer te labzy dg
+
+Input=Съешь же этих мягких французских булок, да выпей чаю
+Output=Съшь жзе этуих мягдких францзских буок, деа выей чю
+
+Input=F241 SoSo 132 S-S  sS! 1233456789
+Output=F2341 SopSo 12 S-S  stS! 12334556789
+
