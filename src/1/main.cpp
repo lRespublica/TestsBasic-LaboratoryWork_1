@@ -12,15 +12,13 @@ int main()
     {
         cin >> input[i];
         while (cin.fail()){
-            cin.clear();
-            cin.ignore(__LONG_LONG_MAX__, '\n');
             cerr << "Error. Input is not integer number. Please, try again" << endl;
-            cin >> input[i];
+            return 1;
         }
 
         if (input[i] <= 0)
         {
-            cerr << "Numbers cannot be less or equal to 0!" << endl;
+            cerr << "Error. Numbers cannot be less or equal to 0!" << endl;
             return 1;
         }
     }

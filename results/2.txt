@@ -1,0 +1,30 @@
+Input=10 5 6 2 3 4 5
+Output=12
+
+Input=21 3 16 3 16 3 16
+Output=46
+
+Input=82 80 3 12 75 23 65 1 6 1 82 3
+Output=350
+
+Input=20 10 3 5 1 
+Output=19
+
+Input=36 2
+Output=18
+
+Input=132
+Output=65
+
+Input=11 7 3
+Output=9
+
+Input=5 2 0
+Output=Error. Numbers cannot be less or equal to 0!
+
+Input=6 23 12
+Output=Error. Points is not available in that field
+
+Input=12 1 2 3 4 5 6 7 8 9 10 11 12
+Output=41
+

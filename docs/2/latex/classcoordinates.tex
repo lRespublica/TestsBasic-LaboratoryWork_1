@@ -1,0 +1,74 @@
+\hypertarget{classcoordinates}{}\doxysection{coordinates Class Reference}
+\label{classcoordinates}\index{coordinates@{coordinates}}
+
+
+Класс, позволяющий работать с координатами  
+
+
+
+
+{\ttfamily \#include $<$coordinates.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcoordinates_ab24dcac64f0c92affac5f2a2d19c3c83}\label{classcoordinates_ab24dcac64f0c92affac5f2a2d19c3c83}} 
+\mbox{\hyperlink{classcoordinates_ab24dcac64f0c92affac5f2a2d19c3c83}{coordinates}} (uint64\+\_\+t \mbox{\hyperlink{classcoordinates_a4bd1f10e804e5973a3248719a3a07973}{x}}, uint64\+\_\+t \mbox{\hyperlink{classcoordinates_a3e1f05e88d9ad58fd9c52355d16fd604}{y}})
+\begin{DoxyCompactList}\small\item\em Конструктор, по которому задаётся текущее расположение в координатах \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoordinates_a84b1c0ba5eee00e416ab1c487becf0de}{coordinates}} (uint64\+\_\+t \mbox{\hyperlink{classcoordinates_acc442fa0feeb48e8c7e4350bcbbd8467}{number}})
+\item 
+\mbox{\Hypertarget{classcoordinates_a86731eb387a5eaf462f8a7e0bb5c7136}\label{classcoordinates_a86731eb387a5eaf462f8a7e0bb5c7136}} 
+\mbox{\hyperlink{classcoordinates_a86731eb387a5eaf462f8a7e0bb5c7136}{coordinates}} ()
+\begin{DoxyCompactList}\small\item\em Пустой конструктор, задающий значение (1; 0), в программе не используется \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcoordinates_a4bd1f10e804e5973a3248719a3a07973}\label{classcoordinates_a4bd1f10e804e5973a3248719a3a07973}} 
+uint64\+\_\+t \mbox{\hyperlink{classcoordinates_a4bd1f10e804e5973a3248719a3a07973}{x}} () const
+\begin{DoxyCompactList}\small\item\em Получить координату x. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcoordinates_a3e1f05e88d9ad58fd9c52355d16fd604}\label{classcoordinates_a3e1f05e88d9ad58fd9c52355d16fd604}} 
+uint64\+\_\+t \mbox{\hyperlink{classcoordinates_a3e1f05e88d9ad58fd9c52355d16fd604}{y}} () const
+\begin{DoxyCompactList}\small\item\em Получить координату y. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcoordinates_acc442fa0feeb48e8c7e4350bcbbd8467}\label{classcoordinates_acc442fa0feeb48e8c7e4350bcbbd8467}} 
+uint64\+\_\+t \mbox{\hyperlink{classcoordinates_acc442fa0feeb48e8c7e4350bcbbd8467}{number}} () const
+\begin{DoxyCompactList}\small\item\em Получить номер текущей ячейки \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcoordinates_a82c5f7a8738d5535c4b400cb194b2ae9}\label{classcoordinates_a82c5f7a8738d5535c4b400cb194b2ae9}} 
+void \mbox{\hyperlink{classcoordinates_a82c5f7a8738d5535c4b400cb194b2ae9}{changeY}} ()
+\begin{DoxyCompactList}\small\item\em Поменять координату y на противоположную. Т.\+е. с 0 на 1 и с 1 на 0,. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcoordinates_acd4d1a77e9972af1888796fddad60dbb}\label{classcoordinates_acd4d1a77e9972af1888796fddad60dbb}} 
+void \mbox{\hyperlink{classcoordinates_acd4d1a77e9972af1888796fddad60dbb}{move\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Сдвинутся на 1 вправо по координате x. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcoordinates_ab48dfd30b5439d26c1a8cf741ea2ce38}\label{classcoordinates_ab48dfd30b5439d26c1a8cf741ea2ce38}} 
+void \mbox{\hyperlink{classcoordinates_ab48dfd30b5439d26c1a8cf741ea2ce38}{move\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Сдвинутся на 1 влево по координате x. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcoordinates_a004a10949472dd02f836ee3b61ecf3f6}\label{classcoordinates_a004a10949472dd02f836ee3b61ecf3f6}} 
+bool const \mbox{\hyperlink{classcoordinates_a004a10949472dd02f836ee3b61ecf3f6}{operator!=}} (const \mbox{\hyperlink{classcoordinates}{coordinates}} \&other\+Coords)
+\begin{DoxyCompactList}\small\item\em Оператор, сравнивающий 2 координаты. Возвращает истинное значение, если координаты не равны Координаты не равные, если у них отличается хотя бы 1 значение. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcoordinates_acc8e2fe2c64470f939e2eca53d55d322}\label{classcoordinates_acc8e2fe2c64470f939e2eca53d55d322}} 
+bool const \mbox{\hyperlink{classcoordinates_acc8e2fe2c64470f939e2eca53d55d322}{operator==}} (const \mbox{\hyperlink{classcoordinates}{coordinates}} \&other\+Coords)
+\begin{DoxyCompactList}\small\item\em Оператор, сравнивающий 2 координаты. Возвращает истинное значение, если координаты равны \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, позволяющий работать с координатами 
+
+Создаёт поле шириной 2 ячейки и произвольной длины Примерная схема расположения ячеек -\/ 0 $\vert$2$\vert$4$\vert$6$\vert$8$\vert$10 $\vert$~\newline
+ $\vert$-\/-\/-\/-\/-\/-\/-\/-\/-\/---$\vert$~\newline
+1 $\vert$1$\vert$3$\vert$5$\vert$7$\vert$9$\vert$11$\vert$~\newline
+ Все чётные ячейки расположены сверху, все нечётные -\/ снизу 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcoordinates_a84b1c0ba5eee00e416ab1c487becf0de}\label{classcoordinates_a84b1c0ba5eee00e416ab1c487becf0de}} 
+\index{coordinates@{coordinates}!coordinates@{coordinates}}
+\index{coordinates@{coordinates}!coordinates@{coordinates}}
+\doxysubsubsection{\texorpdfstring{coordinates()}{coordinates()}}
+{\footnotesize\ttfamily coordinates\+::coordinates (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{number }\end{DoxyParamCaption})}
+
+Конструктор, по которому задаётся текущее расположение по номеру ячейки 
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & В случае передачи конструтору переменной, равной нулю \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/2/coordinates.\+h\item 
+src/2/coordinates.\+cpp\end{DoxyCompactItemize}

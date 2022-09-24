@@ -16,7 +16,12 @@ mover::~mover()
 bool mover::isMoveAvailable(coordinates moveTo)
 {
     return ((moveTo.x() >= m_currentPosition.x() - 1) and (moveTo.x() <= m_currentPosition.x() + 1)
-             and (m_currentPosition != moveTo)) and (moveTo.number() <= m_sizeOfStreet.number());
+            and (m_currentPosition != moveTo)) and (moveTo.number() <= m_sizeOfStreet.number());
+}
+
+const coordinates &mover::sizeOfStreet() const
+{
+    return m_sizeOfStreet;
 }
 
 const coordinates &mover::currentPosition() const
@@ -201,7 +206,7 @@ uint64_t mover::moveTo(const coordinates &point)
     // Теперь добраться до нужной точки до прямой, пока они не совпадут
     if(m_currentPosition.x() < point.x())
     {
-        while(m_currentPosition != point)
+        while(m_currentPosition.x() != point.x())
         {
             moveRight();
             steps++;

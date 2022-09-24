@@ -1,0 +1,30 @@
+Input=10 5 6
+Output=5
+
+Input=21 3 16
+Output=14
+
+Input=82 85 3
+Output=Error. Points is not available in that field
+
+Input=20 20 9
+Output=18
+
+Input=364 42 -12
+Output=Error. Numbers cannot be less or equal to 0!
+
+Input=132 6.7 43
+Output=Error. Input is not integer number. Please, try again
+
+Input=11 7 3
+Output=6
+
+Input=5 2 6
+Output=Error. Points is not available in that field
+
+Input=68 32 24
+Output=30
+
+Input=6 23 12
+Output=Error. Points is not available in that field
+
