@@ -140,13 +140,9 @@ int main(int argc, char * argv[])
     painter.setPen(Qt::red);
     painter.drawText(QRect(10, 10, 700, 310), Qt::TextWordWrap, QString::fromStdString(textString));
 
-    try
+    if(textImage.save("textImage.jpg") == false)
     {
-        textImage.save("textImage.jpg");
-    }
-    catch(...)
-    {
-        cerr << "Cannot save file" << endl;
+        cerr << "Error. Cannot save file" << endl;
         return 1;
     }
 
