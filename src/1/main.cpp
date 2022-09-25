@@ -11,7 +11,8 @@ int main()
     for (int i = 0; i < 3; i++)
     {
         cin >> input[i];
-        while (cin.fail()){
+        if (cin.fail())
+        {
             cerr << "Error. Input is not integer number. Please, try again" << endl;
             return 1;
         }
