@@ -1,5 +1,5 @@
 #!/bin/bash
-NAME=1
+NAME=$1
 
 for data in $(cat $(dirname $0)/$NAME.data | tr ' ' '_')
 do
