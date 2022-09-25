@@ -163,13 +163,11 @@ int main()
         allParameters -= amountOfNegativeNumbers;
 
     ofstream fout;
-    try
+    fout.open("3.txt");
+
+    if(!fout.is_open())
     {
-        fout.open("3.txt");
-    }
-    catch (...)
-    {
-        cerr << "Cannot open file" << endl;
+        cerr << "Cannot open file to write" << endl;
         return 1;
     }
 
