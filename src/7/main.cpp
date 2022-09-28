@@ -48,6 +48,18 @@ char generateSpecialSymbol(uint64_t number)
     return symbols.at(number % symbols.size());
 }
 
+void prepareString(QString &textString)
+{
+   int charsInLine;
+   for(charsInLine = 20; textString.size()/charsInLine > charsInLine/5; charsInLine += 10);
+
+   for(int i = charsInLine - 1; i < textString.size(); i += charsInLine)
+   {
+       textString.insert(i, "\n");
+       i++;
+   }
+   return;
+}
 // 0 - Lowercase;
 // 1 - Uppercase;
 // 2 - Nums;
@@ -86,7 +98,7 @@ int main(int argc, char * argv[])
         return 1;
     }
 
-    string textString;
+    QString textString;
     textString.reserve(length);
 
     // 0 - Lowercase;
@@ -113,9 +125,6 @@ int main(int argc, char * argv[])
         }
     }
 
-    for(int i = 86; i < textString.length(); i+= 86)
-        textString.insert(i, "\n");                 // To fit text into an image
-
     QGuiApplication a(argc, argv);
 
     QImage textImage(QSize(720, 360), QImage::Format_RGB32);
@@ -137,8 +146,28 @@ int main(int argc, char * argv[])
     }
     painter.setPen(QPen(Qt::yellow, 0.75));
     painter.drawLine(0, 360, 720, 0);
+
+    prepareString(textString);
+
+    QFont font("arial");
+    font.setPixelSize(10);
+    painter.setFont(font);
+
+    auto fontMetric = painter.fontMetrics();
+    while(painter.fontMetrics().size(Qt::TextWordWrap, textString).width() <= 700)
+    {
+        int fontSize = painter.font().pixelSize();
+        auto newFont = painter.font();
+        newFont.setPixelSize(fontSize + 1);
+        painter.setFont(newFont);
+    }
+    int fontSize = painter.font().pixelSize();
+    auto newFont = painter.font();
+    newFont.setPixelSize(fontSize - 1);
+    painter.setFont(newFont);
+
     painter.setPen(Qt::red);
-    painter.drawText(QRect(10, 10, 700, 310), Qt::TextWordWrap, QString::fromStdString(textString));
+    painter.drawText(QRect(10, 10, 700, 350), Qt::TextWordWrap | Qt::AlignCenter, textString);
 
     if(textImage.save("textImage.jpg") == false)
     {
