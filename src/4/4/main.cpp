@@ -17,7 +17,7 @@ int main()
         }
         else if (word->size() % 2 == 0 and word->simplified().length() > 1)
         {
-            word->insert(word->size()/2, QChar(int(word->at(word->size()/2 - 1).unicode()) + 1));
+            word->insert(word->size()/2, QChar(int(word->at(0).unicode()) + 1));
         }
         std::cout << word->toStdString();
     }
